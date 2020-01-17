@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formularios (inputs)</h1>
+<form>
+    <!-- Type="text" inputs DE TEXTO-->
+<label for="nombre">Nombre: </label><input id="nombre" placeholder="Sandoval " required type="text">
+<!-- el minlength es para el minimo de palabras que debe tener -->
+<!-- el maxlength es para el maximo de palabras que debe aceptar -->
+<label for="apellido">Apellido:</label> <input id="apellido" minlength="3" maxlength="5" type="text">
+<br>
+<br>
+<label for="Correo">Correo: </label> <input id="Correo" type="email">
+<label for="password">Password:</label><input id="password" type="password">
+<!-- En los tipos de number -->
+<!-- max es para maximo de numeros -->
+<!-- min es para minimo de numeros -->
+<label for="telefono">telefono:</label><input min="0" max="10" id="telefono" type="number">
+<br>
+<br>
+<hr>
+<h2>Selecciona una opcion</h2>
+<label for="">Masculino</label><input type="radio" checked name="sexo" id="" >
+<label for="">Femenino  </label><input type="radio"  name="sexo" id="" >
+<br><br>
+<label for="">¿Que opcion Prefieres?</label>
+<input type="checkbox" checked value="opcion1">opcion 1
+<input type="checkbox" value="opcion2">opcion 2
+<input type="checkbox" value="opcion3">opcion 3
+<input type="checkbox" value="opcion4"> opcion 4
+<br><br>
+<label for="date">Seleccione una fecha  </label><input  min="2020-01-01" value="2020-01-17" max="2020-12-31" type="date" name="" id="">
+<!-- Para seleccionar solo mes  y año-->
+<label for="">Seleccione un mes </label><input type="month" min="2020-01" max="2020-11" name="" id="">
+<!-- Para  -->
+<br><br>
+<label for="">Slecciona un color </label><input type="color">
+<br><br>
+<label for="">Rango:<input type="range"></label>
+<br><br>
+
+<!-- Para seleccionar una opcion deplegandola en forma de lista -->
+<!-- disable desabilita la edicion (no permite editar el contenido de un input) -->
+
+<label for="">Selecciona un opcion</label>
+<select name="" id="">
+<option selected value="">--Selecciona--</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+</select>
+<br><br>
+<!-- con hidden sirve para ocultar el contenido al usuario -->
+<!-- Con diable es para desabilitarlo -->
+<input   value="Probar formulario " type="submit"> 
+</form>
+
+
+</body>
+</html>
